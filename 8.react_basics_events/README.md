@@ -1,0 +1,9 @@
+<p>We know we can attach events to HTML elements in various ways:</p>
+<ul>
+<li>Inline: Directly in the HTML by passing an attribute like<code class="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px" dir="ltr">onclick='functionName()'</code></li>
+<li>Adding an event: with <code class="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px" dir="ltr">element.addEventListener</code></li>
+<li>Setting a function to the e <code class="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px" dir="ltr">onEvent</code> properties of the element, e.g. <code class="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px" dir="ltr">element.onclick = functionName</code></li>
+</ul>
+<p>Well, in React we have an equivalent to attaching an event directly in the JSX element! Simple add the&nbsp;<a href="https://en.wikipedia.org/wiki/Camel_case" target="_blank" rel="noopener">Camel Case</a> event as an attribute and assign a handler to it.</p>
+<p>Pay attention to the output from line 3! You'll see that the type of the event is <code class="inline text-code text-secondary dark:text-secondary-dark px-1 rounded-md no-underline bg-gray-30 bg-opacity-10 py-px" dir="ltr">SyntheticBaseEvent</code> don't be afraid. What this means is that React is trying to standarise the way events behave across all browser so you app works the same!</p>
+<p>You'll use an event whenever you want to do something as a <strong>direct</strong> result of an user interaction: click, input, hover, etc., etc., etc.</p>

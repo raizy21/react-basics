@@ -1,0 +1,7 @@
+<p>JSX is not HTML. JSX is not HTML. JSX is not HTML...<br><br>JSX let's your markup so it's converted to JavaScript, but will also allow you to embed JavaScript expressions.&nbsp;<br><br>Remember a expression is a valid unit of code that resolves to a value, so whether is a variable, an object property, the returned value from a function, you can embed it in JSX.</p>
+<p>To do so, you need to enclose your expression in curly braces<code>{}</code></p>
+<p>In this example:</p>
+<p>Check line 7, we are embedding the value of <code>logoUrl</code>, feel free to change the url to another image!</p>
+<p>Check line 14, and how the title is coming <code>title.toUpperCase()</code>&nbsp;</p>
+<p>Check line 27, we are straight up embedding an expression that will ultimately be computed before resolving to the value!</p>
+<p>Since your components are nothing but functions, it's natural to assume you can pass arguments to use within your components logic. These arguments in JSX look like HTML attributes and, when a component receives them in React, are called <code>props</code> (short for properties).<br><br>To use properties passed by a parent component, every component has access to a parameter called <code>props</code>. Since <code>props</code>is an an object, <a href="../../../static/javascript-objects-i/3" target="_blank" rel="noopener">its contents can be destructured directly from the parameter list</a>. Check how in line 36, we are passing a <code>title</code> prop that we can then use within the <code>Header</code> component.</p>
